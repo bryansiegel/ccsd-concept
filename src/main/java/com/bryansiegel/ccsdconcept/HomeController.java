@@ -8,6 +8,11 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "home";
+        return "public/home";
+    }
+
+    @GetMapping("/admin/dashboard")
+    String dashboard() {
+        return "admin/dashboard";
     }
 }

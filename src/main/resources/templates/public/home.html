@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCSD Concept</title>
+    <link th:href="@{assets/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{assets/css/styles.css}">
+    <link rel="stylesheet" th:href="@{assets/css/slideshow.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <!--    Top Nav-->
+    <nav class="py-2 bg-light border-bottom">
+        <div class="d-flex flex-wrap" style="margin-left:50px;margin-right:50px;">
+            <ul class="nav me-auto">
+                <!--            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Schools</a></li>-->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Schools
+                    </a>
+
+                    <ul class="dropdown-menu w-600" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>                    <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Calendar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Infinite Campus</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Transportation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Safe Voice</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Zoning</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item shadow" style="background-color:#094fa3; padding:1px;margin-right:5px;color:white;border-bottom:3px solid #0d74ef;"><a href="#" class="nav-link link-light px-2" style="color:white;">Newsletter Signup</a></li>
+                <li class="nav-item shadow" style="background-color:#f4b019; padding:1px;margin-right:5px;color:white;border-bottom: 3px solid #ffd61a;"><a href="#" class="nav-link link-dark px-2">Jobs</a></li>
+                <li class="nav-item shadow" style="background-color:#8a8c8f; padding:1px;margin-right:5px;color:white;border-bottom: 3px solid black;"><a href="#" class="nav-link link-dark px-2">Directory</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--    End Top Nav-->
+
+    <!--Main Nav-->
+    <header class="py-3 border-bottom">
+        <div class="d-flex flex-wrap justify-content-center" style="margin-left:50px;margin-right:50px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <img th:src="@{assets/img/ccsd-logo-draft.png}">
+            </a>
+
+            <ul class="nav" style="padding-top:30px;">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-child"></i> Students</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-person"></i> Parents</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-people-group"></i> Employees</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-people-line"></i> Trustees</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><i class="fa-solid fa-people-arrows"></i> Community</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--End Main Nav-->
+
+    <div class="carousel shadow" style="margin-top:1px;">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img th:src="@{assets/img/image1-1.jpeg}">
+                <div class="content">
+                    <div class="author">Feb. 6 2024</div>
+                    <div class="title">CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="topic">ANIMAL</div>-->
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Through Safe Rates to School, the Clark County School District (CCSD) encourages safe walking and bicycling to and from schools. Crossing guards help students cross the streets safely throughout the year in all weather conditions.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img th:src="@{assets/img/image1-1.jpeg}">
+                <div class="content">
+                    <div class="author">Feb. 5 2024</div>
+                    <div class="title">CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="topic">ANIMAL</div>-->
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img th:src="@{assets/img/image1-2.jpeg}">
+                <div class="content">
+                    <div class="author">Feb. 4 2024</div>
+                    <div class="title">CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="topic">ANIMAL</div>-->
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img th:src="@{assets/img/image1-3.jpeg}">
+                <div class="content">
+                    <div class="author">Feb. 3 2024</div>
+                    <div class="title">CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="topic">ANIMAL</div>-->
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img th:src="@{assets/img/image1-1.jpeg}">
+                <div class="content">
+                    <div class="title">
+                        CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="description">-->
+                    <!--                    Description-->
+                    <!--                </div>-->
+                </div>
+            </div>
+            <div class="item">
+                <img th:src="@{assets/img/image1-2.jpeg}">
+                <div class="content">
+                    <div class="title">
+                        CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="description">-->
+                    <!--                    Description-->
+                    <!--                </div>-->
+                </div>
+            </div>
+            <div class="item">
+                <img th:src="@{assets/img/image1-3.jpeg}">
+                <div class="content">
+                    <div class="title">
+                        CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="description">-->
+                    <!--                    Description-->
+                    <!--                </div>-->
+                </div>
+            </div>
+            <div class="item">
+                <img th:src="@{assets/img/image1-4.jpeg}">
+                <div class="content">
+                    <div class="title">
+                        CCSD SHOWS APPRECIATION FOR SCHOOL CROSSING GUARDS
+                    </div>
+                    <!--                <div class="description">-->
+                    <!--                    Description-->
+                    <!--                </div>-->
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <section>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col p-3">
+                    <h1>A District on the Rise</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel metus tellus. Curabitur a
+                        volutpat dolor. Donec eu rhoncus augue. Mauris a pellentesque massa. Quisque suscipit facilisis
+                        quam, vel rhoncus nibh imperdiet sed. Nullam auctor gravida elit, vitae cursus orci consequat
+                        eget. Nunc a eleifend quam, nec gravida risus. Donec tincidunt metus lorem, et commodo urna
+                        rhoncus ut. Maecenas a quam ante. Sed mattis molestie urna, nec auctor magna vulputate nec.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+                    <p style="color:rgb(9, 79, 163); font-size:52px;font-weight:bold;">
+                        89.4%
+                    </p>
+                    <p style="color:darkgrey;font-weight:bold;">
+                        Graduated in 2023
+                    </p>
+                </div>
+                <div class="col p-3">
+                    <h2 class="grey">Charts</h2>
+                    <!--                    Charts-->
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col p-3">
+                    <h2>Three Year BluePrint</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel metus tellus. Curabitur a
+                        volutpat dolor. Donec eu rhoncus augue. Mauris a pellentesque massa. Quisque suscipit facilisis
+                        quam, vel rhoncus nibh imperdiet sed. Nullam auctor gravida elit, vitae cursus orci consequat
+                        eget. Nunc a eleifend quam, nec gravida risus. Donec tincidunt metus lorem, et commodo urna
+                        rhoncus ut. Maecenas a quam ante. Sed mattis molestie urna, nec auctor magna vulputate nec.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+                <div class="col p-3">
+                    <h3 class="pb-3 grey">Strategic Initiatives</h3>
+                    <div>
+                        <h6 style="border-bottom:1px solid lightgrey;border-left:1px solid lightgrey;padding-bottom:10px;padding-left:10px;padding-top:5px;">Initiative <span
+                                style="float:right;"><a href=""><i class="fa-solid fa-arrow-right"></i></a></span>1
+                        </h6>
+                        <h6 style="border-bottom:1px solid lightgrey;border-left:1px solid lightgrey;padding-bottom:10px;padding-left:10px;padding-top:5px;">Initiative <span
+                                style="float:right;"><a href=""><i class="fa-solid fa-arrow-right"></i></a></span>1
+                        </h6>
+                        <h6 style="border-bottom:1px solid lightgrey;border-left:1px solid lightgrey;padding-bottom:10px;padding-left:10px;padding-top:5px;">Initiative <span
+                                style="float:right;"><a href=""><i class="fa-solid fa-arrow-right"></i></a></span>1
+                        </h6>
+                        <h6 style="border-bottom:1px solid lightgrey;border-left:1px solid lightgrey;padding-bottom:10px;padding-left:10px;padding-top:5px;">Initiative <span
+                                style="float:right;"><a href=""><i class="fa-solid fa-arrow-right"></i></a></span>1
+                        </h6>
+                        <h6 style="border-bottom:1px solid lightgrey;border-left:1px solid lightgrey;padding-bottom:10px;padding-left:10px;padding-top:5px;">Initiative <span
+                                style="float:right;"><a href=""><i class="fa-solid fa-arrow-right"></i></a></span>1
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!--    Calendar-->
+    <section>
+        <div class="container p-5">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <h3 class="pb-2">Upcoming Events</h3>
+
+                        <div class="row">
+                            <!--Event 1-->
+                            <div class="col-sm-4">
+                                <center>
+                                    <div style="padding-bottom: 25px;">
+                                        <div class="shadow"
+                                             style="color:white;padding:20px;width:100%;background-color:rgb(9, 79, 163);border-radius:20px;border: 5px solid rgb(13, 116, 239, .8); ">
+                                            <p style="border-bottom:1px solid white;text-align:center;padding-top:25px;padding-bottom:15px;">
+                                                Thursday</p>
+                                            <p style="text-align:center;padding-top:5px;padding-bottom:25px;">2 / 7</p>
+                                        </div>
+
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="col-sm-8">
+                                <h6 style="color:grey;">Communications</h6>
+                                <h5>CPS Job Fair (for Paraprofessionals)</h5>
+                                <p><small>10:00 am - 12: 00 pm</small></p>
+                            </div>
+                            <!--                            End Event 1-->
+                            <!--Event 2-->
+                            <div class="col-sm-4">
+                                <center>
+                                    <div style="padding-bottom: 25px;">
+                                        <div class="shadow"
+                                             style="color:white;padding:20px;width:100%;background-color:rgb(9, 79, 163);border-radius:20px;border: 5px solid rgb(13, 116, 239, .8); ">
+                                            <p style="border-bottom:1px solid white;text-align:center;padding-top:25px;padding-bottom:15px;">
+                                                Thursday</p>
+                                            <p style="text-align:center;padding-top:5px;padding-bottom:25px;">2 / 7</p>
+                                        </div>
+
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="col-sm-8">
+                                <h6 style="color:grey;">External Communications</h6>
+                                <h5>CPS Job Fair (for Paraprofessionals)</h5>
+                                <p><small>10:00 am - 12: 00 pm</small></p>
+                            </div>
+                            <!--End Event-->
+                            <!--                            Event 3-->
+                            <div class="col-sm-4">
+                                <center>
+                                    <div style="padding-bottom: 25px;">
+                                        <div class="shadow"
+                                             style="color:white;padding:20px;width:100%;background-color:rgb(9, 79, 163);border-radius:20px;border: 5px solid rgb(13, 116, 239, .8); ">
+                                            <p style="border-bottom:1px solid white;text-align:center;padding-top:25px;padding-bottom:15px;">
+                                                Thursday</p>
+                                            <p style="text-align:center;padding-top:5px;padding-bottom:25px;">2 / 7</p>
+                                        </div>
+
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="col-sm-8">
+                                <h6 style="color:grey;">Schools</h6>
+                                <h5>CPS Job Fair (for Paraprofessionals)</h5>
+                                <p><small>10:00 am - 12: 00 pm</small></p>
+                            </div>
+                            <!--End Event-->
+                            <!--Event 4-->
+                            <div class="col-sm-4">
+                                <center>
+                                    <div style="padding-bottom: 25px;">
+                                        <div class="shadow"
+                                             style="color:white;padding:20px;width:100%;background-color:rgb(9, 79, 163);border-radius:20px;border: 5px solid rgb(13, 116, 239, .8); ">
+                                            <p style="border-bottom:1px solid white;text-align:center;padding-top:25px;padding-bottom:15px;">
+                                                Thursday</p>
+                                            <p style="text-align:center;padding-top:5px;padding-bottom:25px;">2 / 7</p>
+                                        </div>
+
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="col-sm-8">
+                                <h6 style="color:grey;">Communications</h6>
+                                <h5>CPS Job Fair (for Paraprofessionals)</h5>
+                                <p><small>10:00 am - 12: 00 pm</small></p>
+                            </div>
+
+                        </div>
+
+                    </div><!-- end col -->
+
+                    <div class="col">
+                        <h3 class="pb-2 grey">Community</h3>
+                        <div class="col">
+                            <img th:src="@{assets/img/video.png}" alt="" style="border-radius:20px;width:100%;" class="shadow">
+
+                            <div class="container p-4">
+                                <div class="row">
+                                    <div class="col-sm"><img th:src="@{assets/img/video.png}" alt=""
+                                                             style="border-radius:10px;width:90%;" class="shadow">
+                                    </div>
+                                    <div class="col-sm"><img th:src="@{assets/img/video.png}" alt=""
+                                                             style="border-radius:10px;width:90%;" class="shadow">
+                                    </div>
+                                    <div class="col-sm"><img th:src="@{assets/img/video.png}" alt=""
+                                                             style="border-radius:10px;width:90%;" class="shadow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img th:src="@{assets/img/grid.jpg}" alt="" style="border-radius:20px;" class="shadow">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+</main>
+
+<footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #55565b;
+        width:100%;
+        border-bottom: 5px solid #f4b019;
+
+"
+>
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img th:src="@{assets/img/ccsd-logo-draft-white.png}" alt="">
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none"/>
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <p>
+                        <a class="text-white">Bootstrap</a>
+                    </p>
+                    <p>
+                        <a class="text-white">WordPress</a>
+                    </p>
+                    <p>
+                        <a class="text-white">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a class="text-white">Bootstrap Angular</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none"/>
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <p>
+                        <a class="text-white">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="text-white">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="text-white">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="text-white">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none"/>
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <p><i class="fas fa-home mr-3"></i> Las Vegas, Nevada</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-3">
+
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                    <!-- Copyright -->
+                    <div class="p-3">
+                        © 2024 Copyright:
+                        <a class="text-white" href="https://mdbootstrap.com/"
+                        >CCSD.net</a
+                        >
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                    <!-- Facebook -->
+                    <a
+                            class="btn btn-outline-light btn-floating m-1"
+                            class="text-white"
+                            role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter -->
+                    <a
+                            class="btn btn-outline-light btn-floating m-1"
+                            class="text-white"
+                            role="button"
+                    ><i class="fab fa-x-twitter"></i
+                    ></a>
+
+                    <!-- Google -->
+                    <a
+                            class="btn btn-outline-light btn-floating m-1"
+                            class="text-white"
+                            role="button"
+                    ><i class="fab fa-youtube"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                            class="btn btn-outline-light btn-floating m-1"
+                            class="text-white"
+                            role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <!-- Grid column -->
+            </div>
+        </section>
+        <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+    <script th:src="@{assets/dist/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/js/slideshow.js}"></script>
+    <script th:src="@{assets/js/chart.js}"></script>
+
+
+    <!--    slidshow-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--    Charts-->
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Teachers', 'Students', 'Schools', 'Magnet Schools', 'Private Schools', 'Graduations'],
+                datasets: [{
+                    label: 'Number of Students',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1,
+                    backgroundColor: "rgba(9, 79, 163)",
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+
+</footer>
+
+</body>
+</html>
