@@ -1,63 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CCSD Concept</title>
-    <link th:href="@{assets/css/bootstrap.min.css}" rel="stylesheet">
-    <link th:href="@{assets/css/styles.css}" rel="stylesheet">
-    <link th:href="@{assets/css/slideshow.css}" rel="stylesheet">
-    <script th:source="@{assets/js/fontawesome.all.js}"></script>
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<main>
-    <!--    Top Nav-->
-    <nav class="py-2 bg-light border-bottom" th:include="public/fragments/nav"></nav>
-    <!--    End Top Nav-->
-
-    <!--Main Nav-->
-    <header class="py-3 border-bottom" th:include="public/fragments/header"></header>
-    <!--End Main Nav-->
-
-    <!--    Slide Show-->
-    <div class="carousel shadow" style="margin-top:1px;" th:include="public/fragments/slideshow"></div>
-    <!--    End Slide Show-->
-    <section th:include="public/fragments/section1"></section>
-
-    <section th:include="public/fragments/section2"></section>
-
-    <!--    Calendar-->
-    <section th:include="public/fragments/section4"></section>
-</main>
-
-<footer
-        class="text-center text-lg-start text-white"
-        style="background-color: #55565b;
-        width:100%;
-        border-bottom: 5px solid #f4b019;
-
-"
->
-    <!-- Grid container -->
+<!-- Grid container -->
     <div class="container p-4 pb-0">
         <!-- Section: Links -->
         <section class="">
@@ -214,9 +155,3 @@
         });
     </script>
     <script th:src="@{assets/js/sienna.min.js}" defer></script>
-
-
-</footer>
-
-</body>
-</html>
