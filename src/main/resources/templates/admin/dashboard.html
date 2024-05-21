@@ -6,11 +6,11 @@
 
 
     <title></title>
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/sb-admin-2.min.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/css/sb-admin-2.css}" />
+    <link rel="stylesheet" th:href="@{/assets/css/dataTables.min.css}">
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script th:src="@{/assets/js/fontawesome.all.js}" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
@@ -29,7 +29,7 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center"
            href="index.html">
-            <img src="/img/ccsd-logo-np.png"
+            <img th:src="@{/assets/img/ccsd-logo.svg}"
                  alt="CCSD"
                  width="100px"
                  height="100px"
@@ -38,6 +38,7 @@
               margin-top: 20px;
               padding-top: 25px;
               padding-left: 0px !important;
+              color:white !important;
             "/>
         </a>
         <br/>
@@ -45,7 +46,7 @@
         <hr/>
         <!-- Nav Item - Dashboard -->
         <h2 style="color:white;font-size:25px;padding:14px;border-bottom:1px dotted white;width:90%;margin-left:10px;">
-            Forms & Archives</h2>
+            Departments</h2>
         </li>
         <!-- Nav Item - Tables -->
         <li class="nav-item">
@@ -87,7 +88,7 @@
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block"/>
         <h2 style="color:white;font-size:25px;padding:14px;border-bottom:1px dotted white;width:90%;margin-left:10px;">
-            Templates & Logos</h2>
+            Jobs</h2>
 
         <li class="nav-item">
             <a class="nav-link" href="/admin/downloads/">
@@ -104,6 +105,17 @@
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
             </div> -->
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block"/>
+        <h2 style="color:white;font-size:25px;padding:14px;border-bottom:1px dotted white;width:90%;margin-left:10px;">
+            Bids</h2>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/downloads/">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Downloads</span>
+            </a>
+        </li>
     </ul>
     <!-- End of Sidebar -->
     <!-- Content Wrapper -->
